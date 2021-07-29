@@ -1,36 +1,215 @@
 [
-  {
-    "entry": "Docs",
-    "name": "Docs",
-    "child_entries": [
-      "Get Started",
-      "Guide"
-    ]
-  },
-  {
-    "entry": "Get Started",
-    "name": "Get Started",
-    "items": [
-      "docs/get-started/introduction",
-      "docs/get-started/quick-start"
-    ]
-  },
-  {
-    "entry": "Guide",
-    "name": "Guide",
-    "items": [
-      "docs/guide/anchor",
-      "docs/guide/contents",
-      "docs/guide/menu-items",
-      "docs/guide/sidebar"
-    ]
-  },
-  {
-    "entry": "Blog",
-    "name": "Blog",
-    "items": [
-      "blog/first-blog",
-      "blog/second-blog"
-    ]
-  }
+	{
+		"entry": "Contents",
+		"name": "Contents",
+		"child_entries": [
+			"Blog",
+			"Docs"
+		]
+	},
+	{
+		"entry": "Docs",
+		"name": "Docs",
+		"child_entries": [
+			"Simulating Models",
+			"Tool Box",
+			"Get Started",
+			"Guide"
+		]
+	},
+	{
+		"entry": "Guide",
+		"name": "Guide",
+		"items": [
+			"docs/guide/anchor",
+			"docs/guide/contents",
+			"docs/guide/menu-items",
+			"docs/guide/sidebar"
+		]
+	},
+	{
+		"entry": "Get Started",
+		"name": "Get Started",
+		"items": [
+			"docs/get-started/introduction",
+			"docs/get-started/quick-start"
+		]
+	},
+	{
+		"entry": "Tool Box",
+		"name": "Tool Box",
+		"child_entries": [
+			"Command",
+			"Frequency Estimation",
+			"Model Calibration",
+			"Model Experimentation",
+			"Model Optimization",
+			"Publish Model"
+		],
+		"items": [
+			"docs/ToolBox/SUMMARY",
+			"docs/ToolBox/Toolbox"
+		]
+	},
+	{
+		"entry": "Publish Model",
+		"name": "Publish Model",
+		"items": [
+			"docs/ToolBox/PublishModel/EncryptLevelAnnotation",
+			"docs/ToolBox/PublishModel/InterfaceSetEncryptLevel",
+			"docs/ToolBox/PublishModel/ModelEncryptRules",
+			"docs/ToolBox/PublishModel/PublishModel",
+			"docs/ToolBox/PublishModel/Samples"
+		]
+	},
+	{
+		"entry": "Model Optimization",
+		"name": "Model Optimization",
+		"items": [
+			"docs/ToolBox/ModelOptimization/AdvancedOptions",
+			"docs/ToolBox/ModelOptimization/ModelOptimization",
+			"docs/ToolBox/ModelOptimization/MultiInstanceOptimization",
+			"docs/ToolBox/ModelOptimization/MultiObjectiveOptimization",
+			"docs/ToolBox/ModelOptimization/SingleObjectiveOptimization"
+		]
+	},
+	{
+		"entry": "Model Experimentation",
+		"name": "Model Experimentation",
+		"items": [
+			"docs/ToolBox/ModelExperimentation/AddIOSets",
+			"docs/ToolBox/ModelExperimentation/BatchSimulation",
+			"docs/ToolBox/ModelExperimentation/ModelExperimentation",
+			"docs/ToolBox/ModelExperimentation/MonteCarloAnalysis",
+			"docs/ToolBox/ModelExperimentation/Preparation",
+			"docs/ToolBox/ModelExperimentation/SaveTest",
+			"docs/ToolBox/ModelExperimentation/TestDesign"
+		]
+	},
+	{
+		"entry": "Model Calibration",
+		"name": "Model Calibration",
+		"items": [
+			"docs/ToolBox/ModelCalibration/CheckParameterSensitivity",
+			"docs/ToolBox/ModelCalibration/ModelCalibration",
+			"docs/ToolBox/ModelCalibration/ModelValidation",
+			"docs/ToolBox/ModelCalibration/ParameterCalibration",
+			"docs/ToolBox/ModelCalibration/Preparation"
+		]
+	},
+	{
+		"entry": "Frequency Estimation",
+		"name": "Frequency Estimation",
+		"items": [
+			"docs/ToolBox/FrequencyEstimation/FrequencyEstimation",
+			"docs/ToolBox/FrequencyEstimation/Introduction",
+			"docs/ToolBox/FrequencyEstimation/Samples"
+		]
+	},
+	{
+		"entry": "Command",
+		"name": "Command",
+		"items": [
+			"docs/ToolBox/Command/CMD",
+			"docs/ToolBox/Command/Command",
+			"docs/ToolBox/Command/PythonEditor",
+			"docs/ToolBox/Command/PythonScriptCommand"
+		]
+	},
+	{
+		"entry": "Simulating Models",
+		"name": "Simulating Models",
+		"child_entries": [
+			"2 D Animation",
+			"3 D Shape Files Format Conversion",
+			"Automatic Simulation Results",
+			"Basic Simulation Steps",
+			"Simulation Environment",
+			"Simulation Operation"
+		],
+		"items": [
+			"docs/SimulatingModels/2D-Animation",
+			"docs/SimulatingModels/3DShapeFilesFormatConversion",
+			"docs/SimulatingModels/AutomaticSimulationResults",
+			"docs/SimulatingModels/BasicSimulationSteps",
+			"docs/SimulatingModels/SUMMARY",
+			"docs/SimulatingModels/SimulatingModels",
+			"docs/SimulatingModels/SimulationEnvironment",
+			"docs/SimulatingModels/SimulationOperation"
+		]
+	},
+	{
+		"entry": "Simulation Operation",
+		"name": "Simulation Operation",
+		"items": [
+			"docs/SimulatingModels/SimulationOperation/2AnimationWindowInteraction",
+			"docs/SimulatingModels/SimulationOperation/AnimationWindowInteraction",
+			"docs/SimulatingModels/SimulationOperation/InteractiveOperationOfPlotWindow",
+			"docs/SimulatingModels/SimulationOperation/ManageResult",
+			"docs/SimulatingModels/SimulationOperation/SimulationControl",
+			"docs/SimulatingModels/SimulationOperation/SimulationSettings_Common",
+			"docs/SimulatingModels/SimulationOperation/SimulationSettings_Compile",
+			"docs/SimulatingModels/SimulationOperation/SimulationSettings_Debugging",
+			"docs/SimulatingModels/SimulationOperation/SimulationSettings_Modeltranslation",
+			"docs/SimulatingModels/SimulationOperation/SimulationSettings_Output",
+			"docs/SimulatingModels/SimulationOperation/SimulationSettings_Pattern",
+			"docs/SimulatingModels/SimulationOperation/VariableManipulation"
+		]
+	},
+	{
+		"entry": "Simulation Environment",
+		"name": "Simulation Environment",
+		"items": [
+			"docs/SimulatingModels/SimulationEnvironment/2AnimationWindow",
+			"docs/SimulatingModels/SimulationEnvironment/AnimationWindow",
+			"docs/SimulatingModels/SimulationEnvironment/PlotWindow",
+			"docs/SimulatingModels/SimulationEnvironment/PythonCommand",
+			"docs/SimulatingModels/SimulationEnvironment/SimulationBrowser"
+		]
+	},
+	{
+		"entry": "Basic Simulation Steps",
+		"name": "Basic Simulation Steps",
+		"items": [
+			"docs/SimulatingModels/BasicSimulationSteps/ChangeParameters",
+			"docs/SimulatingModels/BasicSimulationSteps/DemoSimulationAnimation",
+			"docs/SimulatingModels/BasicSimulationSteps/OpenSimulationEnvironment",
+			"docs/SimulatingModels/BasicSimulationSteps/SetSimulationOptions",
+			"docs/SimulatingModels/BasicSimulationSteps/SimulateModel",
+			"docs/SimulatingModels/BasicSimulationSteps/TranslateModel",
+			"docs/SimulatingModels/BasicSimulationSteps/ViewVariablePlot"
+		]
+	},
+	{
+		"entry": "Automatic Simulation Results",
+		"name": "Automatic Simulation Results",
+		"items": [
+			"docs/SimulatingModels/AutomaticSimulationResults/BasicStep",
+			"docs/SimulatingModels/AutomaticSimulationResults/Codedescription"
+		]
+	},
+	{
+		"entry": "3 D Shape Files Format Conversion",
+		"name": "3 D Shape Files Format Conversion",
+		"items": [
+			"docs/SimulatingModels/3DShapeFilesFormatConversion/Conversion",
+			"docs/SimulatingModels/3DShapeFilesFormatConversion/Import3DShapeFiles"
+		]
+	},
+	{
+		"entry": "2 D Animation",
+		"name": "2 D Animation",
+		"items": [
+			"docs/SimulatingModels/2D-Animation/CustomizeDynamicComponent",
+			"docs/SimulatingModels/2D-Animation/DynamicBlocks"
+		]
+	},
+	{
+		"entry": "Blog",
+		"name": "Blog",
+		"items": [
+			"blog/first-blog",
+			"blog/second-blog"
+		]
+	}
 ]

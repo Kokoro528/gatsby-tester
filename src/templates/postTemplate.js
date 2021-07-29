@@ -27,8 +27,10 @@ function Template({
     frontmatter.hideAnchor === null ? false : frontmatter.hideAnchor
   const hideSidebar = frontmatter.sidebar === null ? true : false
 
+
   onSetAnchorHide(hideAnchor)
   onSetSidebarHide(hideSidebar)
+  // onSetSidebarHide(false)
 
   if (selectedKey !== id) onSidebarContentSelected(id)
   if (sidebarEntry !== frontmatter.sidebar)
@@ -38,7 +40,7 @@ function Template({
     <Layout onPostPage={true}>
       <div className="blog-post-container">
         <div className="blog-post">
-          {frontmatter.showTitle && <h1 align="center">{frontmatter.title}</h1>}
+          {/* {frontmatter.showTitle && <h1 align="center">{frontmatter.title}</h1>} */}
           <div
             className="blog-post-content"
             dangerouslySetInnerHTML={{ __html: html }}

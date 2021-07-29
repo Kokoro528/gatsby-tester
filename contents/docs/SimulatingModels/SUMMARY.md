@@ -1,0 +1,44 @@
+---
+title: SUMMARY
+sidebar: Docs
+showTitle: true
+hideAnchor: false
+---
+# Summary
+
+* [仿真](README.md)
+* [仿真环境](SimulationEnvironment.md)
+    * [仿真浏览器](SimulationEnvironment/SimulationBrowser.md)
+    * [曲线窗口](SimulationEnvironment/PlotWindow.md)
+    * [二维动画窗口](SimulationEnvironment/2AnimationWindow.md)
+    * [动画窗口](SimulationEnvironment/AnimationWindow.md)
+    * [命令窗口](SimulationEnvironment/PythonCommand.md)
+    * [输出栏](SimulationEnvironment/OutputBar.md)
+    * [仿真结果自动呈现](SimulationEnvironment/AutomaticSimulationResults.md)
+* [基本仿真步骤](BasicSimulationSteps.md)
+    * [打开仿真环境](BasicSimulationSteps/OpenSimulationEnvironment.md)
+    * [翻译模型](BasicSimulationSteps/TranslateModel.md)
+    * [仿真设置](BasicSimulationSteps/SetSimulationOptions.md)
+    * [求解模型](BasicSimulationSteps/SimulateModel.md)
+    * [查看变量曲线](BasicSimulationSteps/ViewVariablePlot.md)
+    * [浏览模型动画](BasicSimulationSteps/DemoSimulationAnimation.md)
+    * [修改参数](BasicSimulationSteps/ChangeParameters.md)
+* [仿真操作](SimulationOperation.md)
+    * [仿真控制](SimulationOperation/SimulationControl.md)
+    * [仿真设置](SimulationOperation/SimulationSettings.md)
+    * [变量操作](SimulationOperation/VariableManipulation.md)
+    * [曲线窗口交互操作](SimulationOperation/InteractiveOperationOfPlotWindow.md)
+    * [二维动画窗口交互操作](SimulationOperation/2AnimationWindowInteraction.md)
+    * [动画窗口交互操作](SimulationOperation/AnimationWindowInteraction.md)
+    * [仿真实例管理](SimulationOperation/ManageResult.md)
+* [二维动画](2D-Animation.md)
+    * [DynamicBlocks](2D-Animation/DynamicBlocks.md)
+    * [自定义动态组件](2D-Animation/CustomizeDynamicComponent.md)
+* [3D模型外部文件格式转换](3DShapeFilesFormatConversion.md)
+    * [几何外形导入](3DShapeFilesFormatConversion/Import3DShapeFiles.md)
+    * [3D软件外部文件转换为MWorks可识别格式的方法](3DShapeFilesFormatConversion/Conversion.md)
+* [仿真结果自动呈现](AutomaticSimulationResults.md)
+    * [基本步骤](AutomaticSimulationResults/BasicStep.md)
+    * [代码说明](AutomaticSimulationResults/Codedescription.md)
+    
+

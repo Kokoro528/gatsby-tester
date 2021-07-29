@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: `${__dirname}`,
   siteMetadata: {
     title: 'Gatsby Markdown Starter',
   },
@@ -34,7 +35,35 @@ module.exports = {
       },
     },
     'gatsby-transformer-sharp',
-    'gatsby-plugin-sharp',
+    // 'gatsby-plugin-sharp',
+    {
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        // Defaults used for gatsbyImageData and StaticImage
+        defaults: {
+          formats: [`auto`, `webp`],
+          placeholder: `dominantColor`,
+          quality: 50,
+          breakpoints: [750, 1080, 1366, 1920],
+          backgroundColor: `transparent`,
+          tracedSVGOptions: {},
+          blurredOptions: {},
+          jpgOptions: {},
+          pngOptions: {},
+          webpOptions: {},
+          avifOptions: {},
+        },
+        // Set to false to allow builds to continue on image errors
+        // failOnError: false,
+        // // deprecated options and their defaults:
+        // base64Width: 20,
+        // forceBase64Format: `png`, // valid formats: png,jpg,webp
+        // useMozJpeg: process.env.GATSBY_JPEG_ENCODER === `MOZJPEG`,
+        // stripMetadata: false,
+        // defaultQuality: 50,
+      },
+    
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -52,6 +81,34 @@ module.exports = {
       options: {
         plugins: [
           `gatsby-remark-katex`,
+          `gatsby-remark-copy-linked-files`,
+          {
+            resolve: `gatsby-plugin-sharp`,
+            options: {
+              // Defaults used for gatsbyImageData and StaticImage
+              defaults: {
+                formats: [`auto`, `webp`],
+                placeholder: `dominantColor`,
+                quality: 50,
+                breakpoints: [750, 1080, 1366, 1920],
+                backgroundColor: `transparent`,
+                tracedSVGOptions: {},
+                blurredOptions: {},
+                jpgOptions: {},
+                pngOptions: {},
+                webpOptions: {},
+                avifOptions: {},
+              },
+              // Set to false to allow builds to continue on image errors
+              // failOnError: false,
+              // // deprecated options and their defaults:
+              // base64Width: 20,
+              // forceBase64Format: `png`, // valid formats: png,jpg,webp
+              // useMozJpeg: process.env.GATSBY_JPEG_ENCODER === `MOZJPEG`,
+              // stripMetadata: false,
+              // defaultQuality: 50,
+            }
+          },
           {
             resolve: `gatsby-remark-autolink-headers`,
             options: {

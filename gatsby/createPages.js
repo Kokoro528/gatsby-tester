@@ -26,7 +26,7 @@ module.exports = exports.createPages = ({ actions, graphql }) => {
     if (result.errors) {
       return Promise.reject(result.errors)
     }
-
+    // console.log("ghjklkjhghj", result);
     result.data.allMarkdownRemark.edges.forEach(({ node }) => {
       createPage({
         path: replacePath(node.fields.slug),

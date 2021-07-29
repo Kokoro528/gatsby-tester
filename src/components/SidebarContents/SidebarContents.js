@@ -75,6 +75,7 @@ class SidebarContents extends Component {
               : null
             let children = itemToNode(rootEntry)
             if (children && child_dir) children = children.concat(child_dir)
+            // TODO: by Emily, see if there's anyway to do something
             else if (children === null) children = child_dir
             const node = {
               key: rootEntry.id,
@@ -102,7 +103,7 @@ class SidebarContents extends Component {
           const itemToNode = entry => {
             if (entry.items == null) return null
             return entry.items.map(item => {
-              return getPage('/' + item, entry.id)
+              return getPage('/' + item, entry)
             })
           }
 
@@ -112,8 +113,8 @@ class SidebarContents extends Component {
                 const node = {
                   path: pages[item].fields.slug,
                   key: pages[item].id,
-                  title: pages[item].frontmatter.title,
-                  parent: parent,
+                  title: pages[item].frontmatter.title ,
+                  parent: parent.id,
                 }
                 dir.push(node)
                 return node

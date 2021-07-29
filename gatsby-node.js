@@ -8,3 +8,17 @@
 
 exports.createPages = require('./gatsby/createPages')
 exports.onCreateNode = require('./gatsby/onCreateNode')
+
+// const path = require("path")
+// const fs = require("fs")
+
+// exports.onPreInit = () => {
+//   if (process.argv[2] === "build") {
+//     fs.rmdirSync(path.join(__dirname, "dist"), { recursive: true })
+//     fs.renameSync(
+//       path.join(__dirname, "public"),
+//       path.join(__dirname, "public_dev")
+//     )
+//   }
+// }
+
